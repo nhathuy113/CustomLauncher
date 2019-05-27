@@ -7,25 +7,67 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="30dp" >
+        >
 
-        <ImageView
-            android:id="@+id/chromeButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:src="@mipmap/ic_launcher"
-            />
-        <ImageView
-            android:id="@+id/mapsButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            >
+
+            <ImageView
+                android:id="@+id/chromeButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="15dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chromeButton"
+                android:layout_marginTop="0dp"
+                android:gravity="center|bottom"
+                android:paddingBottom="10dp"
+                android:text="Chrome 72.0.3626.76"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="173dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:src="@mipmap/ic_launcher" />
+            >
+
+            <ImageView
+                android:id="@+id/mapsButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="15dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapsButton"
+                android:layout_marginTop="0dp"
+                android:gravity="center|bottom"
+                android:paddingBottom="10dp"
+                android:text="Google Maps 10.16.3"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="173dp" />
+        </RelativeLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
